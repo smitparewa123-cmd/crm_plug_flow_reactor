@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<surface_chemistry unit="kJ/mol" name="steamreform_Ni@Cu(110)">
+<species>(ni) H(ni) H2(ni) O(ni) H2O(ni) CO(ni) CO2(ni) CH3OH(ni) CH3O(ni) CH2O(ni) CHO(ni) CH2OH(ni) CHOH(ni) CH3(ni) CH4(ni) OH(ni) COOH(ni) C(ni) CH(ni) CH2(ni) COH(ni)</species>
+<site name="(ni)">
+<coordination>CH3OH(ni)=1,CO(ni)=1.0</coordination>
+<density unit="mol/cm2">2.66e-09</density>
+<initial>CH3OH(ni)=0.4,(ni)=0.6</initial>
+</site>
+<stick>
+<rxn id="1">H2 + (ni) + (ni) => H(ni) + H(ni) @ 1.0000e-2</rxn>
+<rxn id="2">O2 + (ni) + (ni) => O(ni) + O(ni) @ 1.0000e-2</rxn>
+<rxn id="3">CH3OH + (ni) => CH3OH(ni) @ 1.1000e-1</rxn>
+<rxn id="4">CO2 + (ni) => CO2(ni) @ 1.0000e-5</rxn>
+<rxn id="5">CO + (ni) => CO(ni) @ 5.0000e-1</rxn>
+</stick>
+<arrhenius>
+
+<rxn id="6">CH3OH(ni) + (ni) => CH3O(ni) + H(ni) @ 3.3e+05 0.57 55.00</rxn>
+<rxn id="7">CH3O(ni) + (ni) => CH2O(ni) + H(ni) @ 4.3e+06 0.48 46.29</rxn>
+<rxn id="8">CH2O(ni) + (ni) => CHO(ni) + H(ni) @ 2.6e+02 0.83 80.07</rxn>
+<rxn id="9">CHO(ni) + (ni) => CO(ni) + H(ni) @ 5.4e+11 0.18 1.63</rxn>
+<rxn id="10">H(ni) + H(ni) => H2(ni) + (ni) @ 5.0e+00 1.03 27.01</rxn>
+<rxn id="11">H2O(ni) + (ni) => OH(ni) + H(ni) @ 6.7e+04 0.64 61.83</rxn>
+<rxn id="12">OH(ni) + (ni) => O(ni) + H(ni) @ 2.8e-10 1.92 185.00</rxn>
+<rxn id="13">OH(ni) + OH(ni) => O(ni) + H2O(ni) @ 7.4e-03 1.29 5.00</rxn>
+<rxn id="14">CO(ni) + O(ni) => CO2(ni) + (ni) @ 4.2e+04 0.66 24.00</rxn>
+<rxn id="15">CO(ni) + OH(ni) => COOH(ni) + (ni) @ 4.3e-03 1.27 97.00</rxn>
+<rxn id="16">COOH(ni) + OH(ni) => CO2(ni) + H2O(ni) @ 2.3e-07 1.46 39.00</rxn>
+<rxn id="17">CH2OH(ni) + (ni) => CH2(ni) + OH(ni) @ 3.7e+09 1.19 78.00</rxn>
+<rxn id="18">CHOH(ni) + (ni) => CH(ni) + OH(ni) @ 1.3e+10 1.19 83.00</rxn>
+<rxn id="19">CHO(ni) + (ni) => CH(ni) + O(ni) @ 2.6e+11 1.79 170.00</rxn>
+<rxn id="20">COH(ni) + (ni) => C(ni) + OH(ni) @ 4.8e+11 1.02 194.00</rxn>
+<rxn id="21">CH2(ni) + (ni) => CH3(ni) + (ni) @ 1.0e+13 0.05 5.00</rxn>
+<rxn id="22">CH3(ni) + H(ni) => CH4(ni) + (ni) @ 9.5e+06 0.45 10.00</rxn>
+<rxn id="23">CO2(ni) => CO2 + (ni) @ 1.0e+14 0.04 4.00</rxn>
+<rxn id="24">H2(ni) => H2 + (ni) @ 1.0e+14 0.00 0.00</rxn>
+</arrhenius>
+
+<coverage id="15 16 17">CO(ni)=-50</coverage>
+<coverage id="19">CO(ni)=50</coverage>
+
+</surface_chemistry>
